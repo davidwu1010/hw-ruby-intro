@@ -33,11 +33,11 @@ def hello(name)
 end
 
 def starts_with_consonant? s
-
+  /^(?=[[:alpha:]])[^aeiou]/i.match? s
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  /^([01\s]*0)?0$/.match? s
 end
 
 # Part 3
