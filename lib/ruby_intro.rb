@@ -7,7 +7,7 @@ def sum arr
 end
 
 def max_2_sum arr
-  if arr.length == 0
+  if arr.empty?
       0
   else
     arr.max(2).sum
