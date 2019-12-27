@@ -8,7 +8,7 @@ end
 
 def max_2_sum arr
   if arr.empty?
-      0
+    0
   else
     arr.max(2).sum
   end
@@ -62,6 +62,6 @@ class BookInStock
   end
 
   def price_as_string
-    '$%.2f' % [self.price]
+    '$%.2f' % [price]
   end
 end
