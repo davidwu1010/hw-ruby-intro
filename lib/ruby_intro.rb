@@ -3,25 +3,37 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  arr.reduce(0, :+)
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  if arr.length == 0
+      0
+  else
+    arr.max(2).sum
+  end
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  elems = {}
+  arr.each do |x|
+    if elems.has_key? n - x
+      return true
+    else
+      elems[x] = 0
+    end
+  end
+  false
 end
 
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  "Hello, " + name
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+
 end
 
 def binary_multiple_of_4? s
